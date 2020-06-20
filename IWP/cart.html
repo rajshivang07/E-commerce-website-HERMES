@@ -1,0 +1,177 @@
+
+<html>
+	<head>
+		<title>Hermes:Cart</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image" href="icon/hermeslogo.png"/>
+		<link rel="stylesheet" href="cart.css" type="text/css" />
+        
+	</head>
+	<body>
+        
+		<body style="background: #F3E5F5"; ></body>
+		 <div class="heading">
+                <br>
+			    
+				<img id="logo1" src="icon/hermes_our_logo.png" height="45" width "90"/>	
+                <!--<span><h1 style="color: #fff; font-size: 30px;">Terms and Condition</h1></span>-->
+         </div>
+        <br><br><br><br><br><br><br>
+        <h2 style="margin-left:5%;"><b>YOUR CART</b></h2><br>
+        <!--<div class="content">-->
+        <!--    <div class="cart">
+                
+                
+                <img style="float:left;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height:250; width:250" src="icon/tshirt.png" />
+                <div class="detail">
+                    <h3 style="color:skyblue;">PUMA Sutra Solid Men Round Neck Black T-Shirt</h3><hr>
+                    <h5>Size: M</h5>
+                    <h5>Seller: PUMA India <span style="margin-left: 8%"><img src="icon/assured.png" height="20" width "65"/></span></h5>
+                    <p style="font-size: 24px; color:green;">&#8377;499  <span style="text-decoration: line-through;font-size: 15px; color:red;margin-left: 8%">&#8377;799</span>
+                    <span style="font-size: 15px; color:green;margin-left: 8%">You have saved 38%</span></p>
+                    <button type="button" style="width:80px;height:30px;background-color:white;border:none;">REMOVE</button><br><br>
+                    
+                    
+                </div>
+                <div class="main">
+                    <button style="width:24px;height:24px;border-radius:12px;background-color:red;border:none;"id="clickme1" onclick="subFunction()">-</button>
+                    Item(s):<button style="width:30px;height:24px;background-color:white;border:1px solid;" id="demo2"> 1</button>
+                    <button style="width:24px;height:24px;border-radius:12px;background-color:#64DD17;border:none;"id="clickme2" onclick="addFunction()">+</button>
+                   <script>
+                       var counter = 1;
+                       function add() {
+                           return counter += 1;
+                       }
+                       function sub() {
+                           return counter -= 1;
+                       }
+                       function addFunction(){
+                        document.getElementById("demo2").innerHTML = add();
+                       }
+                       function subFunction(){
+                        document.getElementById("demo2").innerHTML = sub();
+                       }
+                    </script>
+                </div>
+              <br>  
+			</div>
+            <div class="price">
+                <h3>YOU HAVE TO PAY</h3>
+                <hr>
+                <table>
+                <tr>
+                <th>Paying for</th>
+                <th>Price</th>
+                </tr>
+                <tr>
+                <td>Item(s)( 2 )</td>
+                <td>&#8377; 16,498</td>
+                </tr>
+                <tr>
+                <td>Delivery Charges</td>
+                <td>&#8377; 0</td>
+                </tr>
+                <tr>
+                <td>Amount Payable</td>
+                <td>&#8377; 16,498</td>
+                </tr>
+                <tr>
+                </table>
+            </div>-->
+            <div class="cart">
+               <br>
+                
+				<span class="YOUR_CART">YOUR CART</span>&nbsp;&nbsp;
+						
+						<?php include("cart.php");?>
+						<?php product()?>
+                <!--<img style="float:left;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height:250px;width:250" src="icon/moto.png" />
+                <div class="detail">
+                    <h3 style="color:skyblue;">Moto G5 Plus (Lunar Grey, 32 GB)</h3><hr>
+                    <h5>4 GB RAM</h5>
+                    <h5>Seller: IndiFlashMart <span style="margin-left: 8%"><img src="icon/assured.png" height="20" width "65"/></span></h5>
+                    <p style="font-size: 24px; color:green;">&#8377;15,999  <span style="text-decoration: line-through;font-size: 15px; color:red;margin-left: 8%">&#8377;15,999</span>
+                    <span style="font-size: 15px; color:green;margin-left: 8%">You have saved 0%</span></p><br>
+                    <button type="button" style="width:80px;height:40px;background-color:white;border:none;">REMOVE</button><br><br>
+                    
+                </div>
+                <br><br>
+                <div class="main">
+                    <button style="width:24px;height:24px;border-radius:12px;background-color:red;border:none;" onclick="sub1Function()">-</button>
+                    Item(s):<button style="width:30px;height:24px;background-color:white;border:1px solid;" id="demo3"> 1</button>
+                    <button style="width:24px;height:24px;border-radius:12px;background-color:#64DD17;border:none;" onclick="add1Function()">+</button>
+                   <script>
+                       var counter = 1;
+                       function add() {
+                           return counter += 1;
+                       }
+                       function sub() {
+                           if(counter>1){
+                           return counter -= 1;}
+                           else{
+                               return counter=1;
+                           }
+                       }
+                       function add1Function(){
+                        document.getElementById("demo3").innerHTML = add();
+                       }
+                       function sub1Function(){
+                        document.getElementById("demo3").innerHTML = sub();
+                       }
+                    </script>
+                   
+                </div>-->
+                
+			</div>
+        <div class="option">
+        <a href="chechout.php" class="button" type="submit" name="submit" style="vertical-align:middle;float:right;padding: 12px;background-color: #f4511e;height:70px; width: 220px"><span class="button">Checkout</span></a>
+        <a href="continue.php" class="button" type="submit" name="submit" style="vertical-align:middle;padding: 12px; width: 220px;background-color:#64DD17;float:right"><span class="button">Continue Shopping</span></a>
+        </div>
+                
+           
+        <!--</div>-->
+        <br><br>
+        <div class="blank">
+            <br>
+        </div>
+        <div class="navigation">
+            <div class="social">
+            <ul style="list-style-type:none">
+            <li><h3>Keep in touch:</h3></li> 
+            <li><a href="https://www.facebook.com/" target="_blank"><img id="social_icon" src="icon/fb.png"></a></li>
+            <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img id="social_icon" src="icon/insta.png"></a></li>
+            <li><a href="https://twitter.com/login" target="_blank"><img id="social_icon" src="icon/twi.png"></a></li>
+            <li><a href="https://in.pinterest.com/" target="_blank"><img id="social_icon" src="icon/pin.png"></a></li>
+            </ul><br><br>
+            </div>
+            </div>
+            <div class="provide">
+            <ul style="list-style-type:none">
+            <li><h3>We provide:</h3></li> 
+            <li><img id="prov" src="icon/30day.png"></li>
+            <li><img id="prov" src="icon/original.png"></li>
+            <li><img id="prov" src="icon/cod.png"></li>
+            </ul>
+            </div>
+             <div class="payment">
+            <ul style="list-style-type:none;">
+            <li><h3>Payment Method:</h3></li> 
+            <li><img id="pay" src="icon/visa.png"></li>
+            <li><img id="pay" src="icon/mastercard.png"></li>
+            <li><img id="pay" src="icon/rupay.png"></li>
+            <li><img id="pay" src="icon/paypal.png"></li>
+            <li><img id="pay" style="height:40px;margin-top:8px;"  src="icon/paytm.png"></li>
+            <li><img id="pay" style="height:40px;margin-top:8px;"  src="icon/discover.png"></li>
+            </ul>
+               
+        </div>
+        <br>
+        <div class="footer">
+            <p style="text-align: center; color:#fff;"><small> COPYRIGHT &copy 2017, HERMES </small> </p>
+        </div>
+        
+        
+            
+	</body>
+</html>		
+		

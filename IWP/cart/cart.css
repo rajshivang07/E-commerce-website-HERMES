@@ -1,0 +1,239 @@
+body{
+    margin:0;
+}
+@font-face{
+    font-family: WorkSans-Thin;
+    src: url(WorkSans-Thin.ttf);
+}
+*{
+    font-family: WorkSans-Thin;
+    font-weight: 900;
+}
+h1{
+    font-weight: 1800;
+    color:red;
+}
+h3{
+    font-weight: 3800;
+}
+.heading{
+    overflow: hidden;
+    position: fixed;
+    width:100%;
+    top:0;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height:80px;
+	background:linear-gradient(to right, #AD1457,#6A1B9A);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 15px;
+	/*border-radius:10px;*/
+    /*box-shadow: 8px 8px 4px #888888;*/
+
+}
+
+.content{
+	margin-top:50px;
+    margin-bottom:50px;
+    width:100%;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 10px 10px 5px #888888;*/
+	/*border-radius: 15px;*/    
+    border: 2px solid black;
+}
+
+.cart{
+    width:60%;
+    margin-left: 2.5%;
+    margin-top: 5px;
+    float:left;
+    display:block;
+    height:370px;
+    background:#fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 5px 5px 20px;
+    
+}
+.option{
+    width:60%;
+    margin-left: 2.5%;
+    margin-top: 3px;
+    float:left;
+    display:block;
+    height:60px;
+    background:#fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 5px 5px 20px;
+}
+.detail{
+    margin-left: 5%;
+    margin-right: 5%;
+    float:left;
+    text-align: left;
+    padding-right:6px;
+    padding-left:6px;
+    padding-bottom: 4px;
+    width:55%;
+    height:320px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 12px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+    &:hover, &:focus {
+    background:$main-dark;
+  }
+}
+.main{
+    float:left;
+    clear:right;
+    margin-left: 7%;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.price{
+    width:28%;
+    margin-right: 2.5%;
+    float:right;
+    display:block;
+    height:250px;
+    background:#fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 5px 5px 10px;
+    
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    padding: 8px 0px 8px 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th{
+    padding: 8px;
+    font-weight: bold;
+    color:brown;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.blank{
+    clear:left;
+    background-color: #F3E5F5;
+    height:20px;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.footer{
+    /*margin-top:50px;*/
+    text-align: center;
+    background: linear-gradient(to right, #AD1457,#6A1B9A);
+    width=100%;
+    padding: 10px;
+    color:#fff;
+    height:40px;
+    clear:both;
+}
+
+
+#social_icon{
+    width:40px;
+    height:40px;
+    margin:5px 3px 5px 3px;
+    
+}
+.social{
+    width:49%;
+    float:left;
+    height:55px;
+    display:block;
+    margin: 0 0 0 0;
+    padding-bottom: 2px;
+}
+.social li{
+    float:left;
+    margin-bottom:5px;
+}
+.navigation{
+    width:100%;
+    margin-top: 5px;
+    background: #BDBDBD;
+    padding:2px;
+}
+#pay{
+    width:80px;
+    height:60px;
+    margin:5px 3px 5px 3px;
+}
+.payment{
+    width:49%;
+    height:70px;
+    clear:left;
+    float:left;
+    display:block;
+    margin: 0 0 0 0;
+    padding-bottom: 2px;
+}
+.payment li{
+    float:left;
+    margin-bottom:5px;
+}
+.provide{
+    
+    float:right;
+    margin-top: 0px;
+    padding-top: 0px;
+    width:49%;
+    height:135px;
+    display:block;
+    padding-bottom: 2px;
+    margin: 0 0 0 0;
+    border-left: 0.025px solid black;
+}
+.provide li{
+    float:left;
+    margin-bottom:5px;
+}
+#prov{
+    width:105px;
+    height:100px;
+    margin:5px 3px 5px 3px;
+}

@@ -1,0 +1,150 @@
+body{
+    margin:0;
+}
+@font-face{
+    font-family: WorkSans-Thin;
+    src: url(WorkSans-Thin.ttf);
+}
+*{
+    font-family: WorkSans-Thin;
+    font-weight: 900;
+}
+h1{
+    font-weight: 1800;
+    color:red;
+}
+h3{
+    font-weight: 3800;
+}
+.heading{
+    overflow: hidden;
+    position: fixed;
+    width:100%;
+    top:0;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height:80px;
+	background:linear-gradient(to right, #AD1457,#6A1B9A);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 15px;
+	/*border-radius:10px;*/
+    /*box-shadow: 8px 8px 4px #888888;*/
+
+}
+
+.content{
+	margin-top:50px;
+    text-align: justify;
+    margin-bottom:50px;
+    margin-right:17%;
+    margin-left:17%;
+	padding:9px 9px; 
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 10px 10px 5px #888888;*/
+	/*border-radius: 15px;*/    
+}
+#blank{
+    background-color: white;
+    height:20px;
+    width:100%;
+    margin-bottom: 0px;
+}
+
+.footer{
+    /*margin-top:50px;*/
+    text-align: center;
+    background: linear-gradient(to right, #AD1457,#6A1B9A);
+    width=100%;
+    padding: 10px;
+    color:#fff;
+    height:40px;
+    clear:both;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    top: 120px; /* Place the button at the bottom of the page */
+    right: 46.5%; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background: #555; 
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    
+}
+legend {
+    margin:0 auto;
+}
+
+#myBtn:hover {
+    background:linear-gradient(to right, #AD1457,#6A1B9A); 
+}
+#social_icon{
+    width:40px;
+    height:40px;
+    margin:5px 3px 5px 3px;
+    
+}
+.social{
+    width:49%;
+    float:left;
+    height:55px;
+    display:block;
+    margin: 0 0 0 0;
+    padding-bottom: 2px;
+}
+.social li{
+    float:left;
+    margin-bottom:5px;
+}
+.navigation{
+    width:100%;
+    
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding:2px;
+}
+#pay{
+    width:80px;
+    height:60px;
+    margin:5px 3px 5px 3px;
+}
+.payment{
+    width:49%;
+    height:70px;
+    clear:left;
+    float:left;
+    display:block;
+    margin: 0 0 0 0;
+    padding-bottom: 2px;
+}
+.payment li{
+    float:left;
+    margin-bottom:5px;
+}
+.provide{
+    
+    float:right;
+    margin-top: 0px;
+    padding-top: 0px;
+    width:49%;
+    height:135px;
+    display:block;
+    padding-bottom: 2px;
+    margin: 0 0 0 0;
+    border-left: 0.025px solid black;
+}
+.provide li{
+    float:left;
+    margin-bottom:5px;
+}
+#prov{
+    width:105px;
+    height:100px;
+    margin:5px 3px 5px 3px;
+}
